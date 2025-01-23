@@ -13,10 +13,6 @@
             theme: {
             extend: {
                 fontFamily: { 
-                    mono : ["JetBrains Mono", "Arial"],
-                    barlow : ["Barlow", "Arial"],
-                    poppins : ["Poppins", "Arial"],
-                    gilda : ["Gilda Display", "Arial"],
                     saira : ["Saira", "Arial"],
                 },
                 colors: {
@@ -27,16 +23,23 @@
         };
     </script>
 </head>
-<body class="font-saira">
-    <header>
+<body class="font-saira bg-black">
+    <header class="text-white md:px-[130px] px-[25px] ">
         <nav class=" flex justify-between items-center">
-            <p class=" text-[32px]">FurniShop</p>
-            <ul class="flex gap-[64px] text-[16px]">
+            <p class=" text-[32px] font-bold">FurniShop</p>
+            <ul class="md:flex gap-[64px] text-[16px] hidden " id="menu ">
                 <li><a href="#">Home</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Features</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Contact</a></li>
             </ul>
+            <button type="button" class="md:hidden bloc" id="btnmenu">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12H7" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M21 6H3" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M21 18H3" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+            </button>
         </nav>
     </header>
 </body>
